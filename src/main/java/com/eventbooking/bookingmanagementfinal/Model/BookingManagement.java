@@ -11,7 +11,7 @@ public class BookingManagement {
     private Queue<Booking> queue = new LinkedList<>();
 
     public BookingManagement(ServletContext context) {
-        this.filePath = context.getRealPath("/Booking.txt"); // deployed file path
+        this.filePath = context.getRealPath("/Booking.txt");
         loadFromFile();
     }
 

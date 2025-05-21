@@ -16,7 +16,7 @@ public class Booking {
         this.location      = location;
         this.photographerId = photographerId;
     }
-
+//
     public String toFileString() {
         return bookingID + ","
                 + clientName + ","

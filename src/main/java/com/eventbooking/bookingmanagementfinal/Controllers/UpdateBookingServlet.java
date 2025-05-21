@@ -13,7 +13,7 @@ public class UpdateBookingServlet extends HttpServlet {
         String newName = request.getParameter("name");
         String newDate = request.getParameter("date");
 
-        List<String> updatedBookings = new ArrayList<>();
+        List<String> updatedBookings = new ArrayList<>();//
 
         BufferedReader reader = new BufferedReader(new FileReader(filePath));
         String line;

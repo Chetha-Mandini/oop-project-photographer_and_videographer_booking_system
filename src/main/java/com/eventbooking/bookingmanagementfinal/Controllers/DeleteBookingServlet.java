@@ -31,5 +31,5 @@ public class DeleteBookingServlet extends HttpServlet {
         response.sendRedirect("viewBookings.jsp");
     }
 }
-
+//
 

@@ -20,7 +20,7 @@ public class BookingServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // auto-assign next N### ID
+
         String bookingID = bookingManagement.getNextBookingID();
         String clientName = request.getParameter("clientName");
         String eventType = request.getParameter("eventType");
