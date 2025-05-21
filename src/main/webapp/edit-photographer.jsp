@@ -61,7 +61,7 @@
     </style>
 </head>
 <body>
-<!-- Navigation -->
+
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
         <a class="navbar-brand" href="#">
@@ -180,7 +180,7 @@
     </div>
 </div>
 
-<!-- Footer -->
+
 <footer class="text-white py-4 mt-5">
     <div class="container text-center">
         <p class="mb-0">&copy;2025 PhotoPro. All rights reserved.</p>
