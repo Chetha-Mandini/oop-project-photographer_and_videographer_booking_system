@@ -49,7 +49,7 @@ public class BookingManagement {
                 queue.add(Booking.fromFileString(line));
             }
         } catch (IOException e) {
-            // ignore if not found
+
         }
     }
 
