@@ -38,5 +38,6 @@ public class PaymentServlet extends HttpServlet {
         session.setAttribute("lastPayment", payment);
 
         request.getRequestDispatcher("/invoice.jsp").forward(request, response);
+
     }
 }
