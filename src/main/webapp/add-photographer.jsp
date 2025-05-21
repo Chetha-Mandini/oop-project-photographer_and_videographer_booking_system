@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Photographer – PhotoPro</title>
 
-    <!-- Bootstrap & FontAwesome -->
+
     <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -16,7 +16,7 @@
             rel="stylesheet"
     >
 
-    <!-- Dark Theme Variables & Styles -->
+
     <style>
         html, body {
             height: 100%;
@@ -44,7 +44,7 @@
             --light-gray:    #e6e6e6;
         }
 
-        /* dark ash navbar */
+
         .navbar {
             background-color: var(--nav-ash) !important;
         }
