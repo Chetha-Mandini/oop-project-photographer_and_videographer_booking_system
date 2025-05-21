@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    
+    <display-name>Photography Event Management</display-name>
+    
+    <!-- Servlets -->
+    <servlet>
+        <servlet-name>AddEventServlet</servlet-name>
+        <servlet-class>servlet.AddEventServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>EditEventServlet</servlet-name>
+        <servlet-class>servlet.EditEventServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>DeleteEventServlet</servlet-name>
+        <servlet-class>servlet.DeleteEventServlet</servlet-class>
+    </servlet>
+    
+    <!-- Servlet Mappings -->
+    <servlet-mapping>
+        <servlet-name>AddEventServlet</servlet-name>
+        <url-pattern>/AddEventServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>EditEventServlet</servlet-name>
+        <url-pattern>/EditEventServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>DeleteEventServlet</servlet-name>
+        <url-pattern>/DeleteEventServlet</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Welcome File List -->
+    <welcome-file-list>
+        <welcome-file>events.jsp</welcome-file>
+    </welcome-file-list>
+    
+    <!-- Session Configuration -->
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+</web-app>
