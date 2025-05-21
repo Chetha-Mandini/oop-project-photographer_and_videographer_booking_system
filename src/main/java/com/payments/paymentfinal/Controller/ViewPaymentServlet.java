@@ -91,5 +91,6 @@ public class ViewPaymentServlet extends HttpServlet {
         out.println("</div>");
         out.println("</body>");
         out.println("</html>");
+
     }
 }
