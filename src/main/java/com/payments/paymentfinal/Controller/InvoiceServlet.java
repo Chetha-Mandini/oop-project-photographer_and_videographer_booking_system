@@ -40,6 +40,5 @@ public class InvoiceServlet extends HttpServlet {
         out.println("<a href='viewPayments'>View All Payments</a>");
         out.println("</body>");
         out.println("</html>");
-
     }
 }
