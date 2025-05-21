@@ -75,5 +75,6 @@ public class InvoiceDetailsServlet extends HttpServlet {
         out.println("</div>");
         out.println("</body>");
         out.println("</html>");
+
     }
 }
