@@ -187,7 +187,6 @@
     </div>
 </div>
 
-<!-- FOOTER -->
 <footer class="text-center">
     <div class="container">
         <p class="mb-0">&copy;2025 PhotoPro. All rights reserved.</p>
