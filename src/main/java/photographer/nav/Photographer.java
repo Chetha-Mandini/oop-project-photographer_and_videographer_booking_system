@@ -2,7 +2,7 @@ package photographer.nav;
 
 import java.io.Serializable;
 
-//c
+
 public class Photographer implements Serializable {
     private int id;
     private String name;

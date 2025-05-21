@@ -9,7 +9,7 @@ public class PhotographerManager {
     private static final String DIRECTORY_PATH = "C:\\Users\\nwick\\OneDrive\\Desktop\\photpgraphers.txt";
     private static final String FILE_PATH = "C:\\Users\\nwick\\OneDrive\\Desktop\\data.txt";
 
-    // Add a new photographer
+
     public void addPhotographer(Photographer photographer) throws IOException {
         ensureDirectoryExists();
         try (PrintWriter out = new PrintWriter(new FileWriter(FILE_PATH, true))) {
@@ -17,7 +17,7 @@ public class PhotographerManager {
         }
     }
 
-    // Get all photographers
+
     public List<Photographer> getAllPhotographers() throws IOException {
         ensureDirectoryExists();
         List<Photographer> photographers = new ArrayList<>();
@@ -49,7 +49,7 @@ public class PhotographerManager {
         return photographers;
     }
 
-    // Get photographer by ID
+
     public Photographer getPhotographerById(int id) throws IOException {
         List<Photographer> photographers = getAllPhotographers();
         for (Photographer p : photographers) {
@@ -60,7 +60,7 @@ public class PhotographerManager {
         return null;
     }
 
-    // Update photographer
+
     public void updatePhotographer(Photographer updatedPhotographer) throws IOException {
         List<Photographer> photographers = getAllPhotographers();
         for (int i = 0; i < photographers.size(); i++) {
@@ -72,14 +72,14 @@ public class PhotographerManager {
         saveAllPhotographers(photographers);
     }
 
-    // Delete photographer
+
     public void deletePhotographer(int id) throws IOException {
         List<Photographer> photographers = getAllPhotographers();
         photographers.removeIf(p -> p.getId() == id);
         saveAllPhotographers(photographers);
     }
 
-    // Sort photographers by rating using Bubble Sort
+
     public List<Photographer> sortPhotographersByRating() throws IOException {
         List<Photographer> photographers = getAllPhotographers();
         int n = photographers.size();
@@ -97,7 +97,7 @@ public class PhotographerManager {
         return photographers;
     }
 
-    // Save all photographers to file
+
     private void saveAllPhotographers(List<Photographer> photographers) throws IOException {
         ensureDirectoryExists();
         try (PrintWriter out = new PrintWriter(new FileWriter(FILE_PATH))) {
@@ -107,7 +107,7 @@ public class PhotographerManager {
         }
     }
 
-    // Generate new ID
+
     public int generateNewId() throws IOException {
         List<Photographer> photographers = getAllPhotographers();
         if (photographers.isEmpty()) {
@@ -116,7 +116,6 @@ public class PhotographerManager {
         return photographers.get(photographers.size() - 1).getId() + 1;
     }
 
-    // Ensure that the directory exists
     private void ensureDirectoryExists() {
         File directory = new File(DIRECTORY_PATH);
         if (!directory.exists()) {
