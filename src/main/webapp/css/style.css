@@ -1,0 +1,126 @@
+/* Main styles for the review application */
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Dark theme styles */
+.dark-theme {
+    background-color: black;
+    color: white;
+}
+
+.dark-theme .container {
+    background-color: #1a1a1a;
+    border: 2px solid gold;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.dark-theme button {
+    background-color: gold;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dark-theme button:hover {
+    background-color: #21a13a;
+}
+
+/* Light theme for past reviews */
+.light-theme {
+    background-color: white;
+    color: black;
+}
+
+.light-theme .container {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.light-theme button.primary {
+    background-color: #f7c948;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.light-theme button.primary:hover {
+    background-color: #e5b836;
+}
+
+.light-theme button.danger {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.light-theme button.danger:hover {
+    background-color: #c0392b;
+}
+
+/* Profile cards */
+.profile-card {
+    background-color: #1a1a1a;
+    border: 2px solid gold;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(218, 165, 32, 0.3);
+}
+
+.rating-stars {
+    color: gold;
+    font-size: 1.5rem;
+}
+
+.rank-badge {
+    background-color: gold;
+    color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Form controls */
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Custom colors */
+.text-gold {
+    color: gold;
+}
+
+.bg-gold {
+    background-color: gold;
+}
