@@ -28,6 +28,5 @@ public class SelectPaymentMethodServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.sendRedirect("SelectPaymentMethod.jsp");
-
     }
 }

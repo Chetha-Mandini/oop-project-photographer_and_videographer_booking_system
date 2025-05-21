@@ -2,7 +2,6 @@ package com.payments.paymentfinal.Controller;
 
 import com.payments.paymentfinal.Model.Payment;
 import com.payments.paymentfinal.Model.PaymentRepository;
-
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.WebServlet;
@@ -38,6 +37,5 @@ public class PaymentServlet extends HttpServlet {
         session.setAttribute("lastPayment", payment);
 
         request.getRequestDispatcher("/invoice.jsp").forward(request, response);
-
     }
 }

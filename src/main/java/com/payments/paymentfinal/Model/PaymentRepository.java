@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PaymentRepository {
-    private static final String FILE_PATH = "C:\\Users\\imzya\\IdeaProjects\\PaymentFinal\\src\\main\\webapp\\payments.txt";
+    private static final String FILE_PATH = "C:\\Users\\imzya\\IdeaProjects\\PaymentFinal\\src\\main\\webapp\\data.txt";
 
     public void savePayment(Payment payment) throws IOException {
         File file = new File(FILE_PATH);
@@ -31,5 +31,16 @@ public class PaymentRepository {
             }
         }
         return payments;
+    }
+
+    public void rewritePayments(List<Payment> payments) throws IOException {
+        File file = new File(FILE_PATH);
+        file.getParentFile().mkdirs();
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(file, false))) {
+            for (Payment payment : payments) {
+                writer.write(payment.toFileString());
+                writer.newLine();
+            }
+        }
     }
 }
